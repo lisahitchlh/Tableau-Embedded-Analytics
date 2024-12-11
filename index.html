@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lisa's B2S Embedding</title>
+    <script
+      type="module"
+      src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+    ></script>
+
+    <!--Link to Skeleton Style Sheet which makes it look nicer-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>💫 Lisa's B2S First Embedding Attempt 💫</h1>
+    <!-- this is a comment. Control forward slash -->
+
+    <!-- Insert a button -->
+    <fieldset id="first_row_of_buttons">
+      <legend>Click to filter!</legend>
+      <input
+        type="button"
+        value="Oregon and Washington only"
+        id="Oregon_Button"
+      />
+
+      <input type="button" value="Clear Filter" id="Clear_Filter_Button" />
+
+      <input type="button" value="Undo" id="Undo_Button" />
+    </fieldset>
+
+    <div class="First viz">
+      <tableau-viz
+        id="tableauViz"
+        src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+        width="200vw"
+        height="500vh"
+        toolbar="top"
+      >
+      </tableau-viz>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
